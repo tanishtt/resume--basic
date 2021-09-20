@@ -159,10 +159,7 @@ padding: 20px;
     border-bottom-left-radius: inherit;
     box-shadow: 4px 0 14px 4px rgb(90, 88, 88);
 }
-/*--------color----*/
-.mb-blue{
-    background-color: blue;
-}
+
 .skill-name{
     padding-top: 9px;
 }
@@ -173,4 +170,37 @@ padding: 20px;
     color: white;
     font-family: sans-serif;
 }
-
+/*--------color----*/
+.mb-blue{
+    background-color: rgb(41, 41, 250);
+}
+.mb-pink{
+    background-color: rgb(247, 73, 99);
+}
+.mb-green{
+    background-color:rgb(42, 155, 42);
+}
+/*------------experience-------------------*/
+#experience{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+/*--------education----------------*/
+#education{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+/*------portfolio----------*/
+#portfolio{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+/*-------------contact------------------------*/
+#contact{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
