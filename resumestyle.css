@@ -19,6 +19,9 @@ background-color: rgba(243, 241, 241, 0.986);
 section:nth-child(2n+1){
     background-color: white;
 }
+section:last-child{
+    background: linear-gradient(to right,rgb(128, 6, 241),rgb(101, 7, 145));
+}
 /*----header and icons-----------*/
 #body-header h1{
     color: rgb(252, 247, 247);
@@ -134,7 +137,7 @@ font-weight: 500;
 
 }
 .section-display{
-width: 70%;
+width: 80%;
 
 height: auto;
 display: flex;
@@ -148,16 +151,19 @@ padding: 20px;
     height: 2.65rem;
     background-color: rgb(179, 176, 176);
     border-radius: 1.5rem;
-    margin: 30px
+    margin: 30px;
+    
 }
-
+.skill-progress> div{
+    box-shadow: 4px 0px 7px #5e5c5c;
+}
 /*---------percentage-----*/
 .eighty-five{
     width: 75%;
     height: inherit;
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
-    box-shadow: 4px 0 14px 4px rgb(90, 88, 88);
+    
 }
 
 .skill-name{
@@ -193,14 +199,70 @@ padding: 20px;
     justify-content: center;
 }
 /*------portfolio----------*/
-#portfolio{
+.p-image{
     height: 200px;
-    display: flex;
-    justify-content: center;
+    width: 250px;
+    padding: 30px;
+    
+    
+    
+}
+.p-image img{
+    height: inherit;
+    width: inherit;
+    
+    
+}
+.p-image:hover{
+    
+    background-color: grey;
+    opacity: 0.5;
 }
 /*-------------contact------------------------*/
-#contact{
-    height: 100px;
+.contact-subclass{
+    height: 350px;
+    width: 500px;
+    
+    margin: 30px;
+    border: 4px solid black;
+
+}
+.contact-subclass div{
+    margin-top: 12px;
+    
+}
+.contact-subclass input{
+    width: 27rem;
+    height: 45px;
+    border-bottom:3px solid rgb(255, 255, 255);
+    background-color: inherit;
+    
+}
+.contact-subclass textarea{
+width: 27rem;
+height: 5rem;
+border-bottom:5px solid white;
+background-color: inherit;
+}
+.contact-subclass button{
+    height: 3rem;
+    width: 12rem;
+    background-color: inherit;
+    color: white;
+    size: 9rem;
+    letter-spacing: 1px;
+    border: 3px  solid white;
+    margin-top: 12px;
+}
+.contact-subclass form{
+    
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
+::placeholder{
+    font: 1.3em sans-serif;
+    
+}
+
+
