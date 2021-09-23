@@ -198,11 +198,60 @@ position: relative;
 width: 40%;
 left: 5%;
 min-height: 150px;
-border: 2px solid black;
+/*border: 2px solid black;*/
 margin :8px;
-}.timeline-box:nth-child(2n)
+text-align: right;
+}
+.timeline-box:nth-child(2n)
 {
-    left: 55%;
+    left: 54%;
+    text-align: left;
+}
+.timeline-box:nth-child(2n+1):after{
+content: '';
+position: absolute;
+top: 25%;
+right: -13%;
+z-index: 1;
+border-radius: 50%;
+width: 1rem;
+height: 1rem;
+background-color: rgb(37, 37, 37);
+}
+.timeline-box:nth-child(2n):after{
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: -13%;
+    z-index: 1;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(37, 37, 37);
+    }
+
+.timeline-divider{
+    position: absolute;
+    height: 90%;
+    width: 0;
+    left: 50%;
+    border: 3.2px dashed rgb(82, 78, 78);
+    top: 5%;
+}
+.timeline-traveller{
+    position: sticky;
+    top: 12%;
+    color: rgb(7, 7, 7);
+    font-size: 30px;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+.timeline-box-content p:nth-child(2n+1){
+    
+    text-align: justify;
+}
+.timeline-box-content{
+    
 }
 /*--------education----------------*/
 #education{
@@ -222,12 +271,14 @@ margin :8px;
 .p-image img{
     height: inherit;
     width: inherit;
+    border-radius: 20px;
+    transition: all 1s;
     
     
 }
-.p-image:hover{
-    
-    background-color: grey;
+.p-image img:hover{
+    transform: rotate(20deg);
+    border-radius: 50px 0 50px 0;
     opacity: 0.5;
 }
 /*-------------contact------------------------*/
@@ -256,7 +307,7 @@ margin :8px;
 .contact-subclass textarea{
 width: 30em;
 height: 5rem;
-border-bottom:5px solid white;
+border: 0px;
 background-color: inherit;
 }
 .contact-subclass button{
@@ -275,11 +326,11 @@ background-color: inherit;
     flex-wrap: wrap;
     justify-content: center
 }
-.contact-subclass p,h3,div,span{
+/*.contact-subclass p,h3,div,span{
     color: white;
     font-family: sans-serif;
     
-}
+}*/
 ::placeholder{
     font: 1.3em sans-serif;
     color: white;
@@ -289,6 +340,16 @@ background-color: inherit;
     padding: 10px;
     text-align: justify;
     margin-top: -1px;
+    color: white;
+    font-size: 18px;
 }
+.bottom-line{
+position: relative;
+
+    height: 0px;
+    width: 90%;
+    border: 4px solid white;
+}
+
 
 
