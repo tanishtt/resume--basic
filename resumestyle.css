@@ -284,8 +284,8 @@ background-color: rgb(37, 37, 37);
 /*-------------contact------------------------*/
 .contact-subclass{
     height: 350px;
-    max-width: 25rem;
-    
+    width: 35%;
+    min-width: 200px;
     margin: 30px 30px 0 30px;
     
 
@@ -296,7 +296,7 @@ background-color: rgb(37, 37, 37);
     
 }
 .contact-subclass input{
-    width: 30em;
+    width: 90%;
     height: 45px;
     
     background-color: inherit;
@@ -305,7 +305,7 @@ background-color: rgb(37, 37, 37);
     
 }
 .contact-subclass textarea{
-width: 30em;
+width: 90%;
 height: 5rem;
 border: 0px;
 background-color: inherit;
@@ -313,6 +313,7 @@ background-color: inherit;
 .contact-subclass button{
     height: 3rem;
     width: 12rem;
+    
     background-color: inherit;
     color: white;
     size: 9rem;
@@ -322,9 +323,9 @@ background-color: inherit;
 }
 .contact-subclass form{
     
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center*/
 }
 /*.contact-subclass p,h3,div,span{
     color: white;
@@ -336,7 +337,8 @@ background-color: inherit;
     color: white;
 }
 #get-in-touch{
-    width: 28em;
+    width: 35%;
+    
     padding: 10px;
     text-align: justify;
     margin-top: -1px;
